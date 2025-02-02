@@ -23,7 +23,7 @@ function App() {
       <Route path="/cart" element={<Cart/>}></Route>
       <Route path="/checkout" element={<Checkout/>}></Route>
       <Route path="/products/:id" element={<ProductPage/>}></Route>
-      <Route path="/payment_success" element={<PaymentPage/>}></Route>
+      
      </Routes>
      
     </BrowserRouter>
