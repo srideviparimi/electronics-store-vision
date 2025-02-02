@@ -85,7 +85,7 @@ const Checkout=()=>{
                             </tr>
                         </thead>
                     </table>
-                    <Link to="/checkout/payment_success"><button type="button" className="btn btn-primary" id="proceedToPayBtn" disabled onClick={()=>payment()}>Proceed to Pay</button></Link>
+                    <Link to="/payment_success"><button type="button" className="btn btn-primary" id="proceedToPayBtn" disabled onClick={()=>payment()}>Proceed to Pay</button></Link>
                 </div>
             </div>
         </div>
