@@ -9,7 +9,7 @@ import Cart from "./pages/Cart"
 import Checkout from './pages/Checkout'
 import ProductPage from './pages/ProductPage'
 import { BrowserRouter } from 'react-router-dom'
-import PaymentPage from "./pages/PaymentPage";
+
 
 function App() {
   
