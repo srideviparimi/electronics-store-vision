@@ -1,0 +1,42 @@
+.cartName{
+    width:80%;
+    margin: 2% 10% 0 10%; 
+  
+}
+.cartBody{
+    display: flex;
+    align-items: right;
+    text-align: center;
+}
+.cartImage{
+    width:20%;
+    height:100px; 
+} 
+.cartTitle{
+    width:50%;
+}
+.cartPrice{
+    width:20%;
+}
+.oldPrice{
+    text-decoration: line-through;
+}
+#removeBtn{
+    width:10%;
+    height:50px;
+    margin-top:20px; 
+    background-color: #4DA8DA;
+    border-radius: 20px;
+    border:none;
+}
+#removeBtn:hover{
+    color: rgb(193, 193, 247);
+}
+
+#empty{
+    text-align: center;
+}
+.footerDiv{
+   
+    bottom:0;
+}

@@ -1,0 +1,19 @@
+.row input{
+    margin:2% 0 2% 0;
+    padding:2%;
+}
+#submitButton{
+    width:30%;
+    background-color: #4DA8DA;
+    border-radius: 30px;
+    color:white;
+    border:none;
+}
+#submitButton:hover{
+    
+    color: rgb(193, 193, 247);
+ }
+#proceedToPayBtn{
+    border-radius: 30px;
+    padding: 3%;
+}

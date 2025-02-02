@@ -1,0 +1,118 @@
+.home{
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/**intro section start*/
+.homeSection{
+    background: linear-gradient(to bottom right,  #12232E, #007cc7);
+    width:100%;
+    height:475px;
+    color:white;
+    padding-top: 50px;;
+}
+#introCard{
+    padding:20% 8% 20% 8%;
+    width:90%; 
+    height:auto;
+    text-align: center;
+}
+
+
+  /* Customize the image */
+  #homeImage {
+    width: 100%; /* Ensure image covers card width */
+    height: 100%; /* Ensure image covers card height */
+    object-fit: cover; /* Adjust to maintain aspect ratio */
+    border-radius: 10px; /* Optional: round the corners of the image */
+  }
+
+  /* Style for text */
+  #introTitle {
+    color: white;
+    font-size: 1.2rem;
+    
+  }
+
+  /* Style for button */
+  #shopBtn {
+    margin-top: 10px;
+    background-color: #4DA8DA;
+    border-radius: 20px;
+  }
+  #shopBtn:hover{
+    color: rgb(193, 193, 247);
+
+  }
+
+  /**intro ends and phot slider starts*/
+  .photoSlider{
+    width:100%;
+    height:475px;
+    text-align: center;
+    background-color: #eefbfb;
+    color:#007cc7;
+  }
+ .item{
+  
+  width: 100%; /* Full width */
+  height: 400px;
+ }
+ /** features section */
+ #featuresContainer{
+ padding-top: 1%;;
+ }
+ .features{
+  width:100%;
+  height:500x;
+  background: linear-gradient(to bottom right,  #12232E, #007cc7);
+  color:white;
+
+ }
+#featuresCard{
+  background-color: #12232E;
+  color:white;
+  padding:2%;
+  width:90%;
+  height:200px;
+  margin:5%;
+}
+
+#featuresCard:hover{
+  scale:1.05;
+  transition: 0.5s ease;
+
+}
+/**testimonial section*/
+.testimonial{
+  width:100%;
+  height:475px;
+  background-color:#add0e4  ;
+  position: relative;
+}
+
+
+#colour1{
+width:100%;
+ height: '300px'
+}
+#colour2{
+  width:100%;
+ height: '175px';
+ background-color: #eefbfb;;
+}
+.card-body{
+  
+ 
+  align-items: stretch;
+}
+
+/*Dark Blue: #12232E
+
+Lighter Blue: #007CC7
+
+Lightest Blue: #4DA8DA
+
+Shadow of Dark Blue: #203647
+
+Shadow of Light Blue: #EEFBFB*/

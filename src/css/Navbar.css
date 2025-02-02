@@ -1,0 +1,21 @@
+.nav{
+    background-color: #12232E;
+    height:max-content;
+    padding:2%;
+   
+}
+.pageName{
+    color:white;
+    text-decoration: none;
+}
+.title{
+    color:white;
+    background-color: #4DA8DA;
+    text-decoration: none;
+    padding:3%;
+    border-radius: 20px;;
+}
+.title:hover{
+    
+   color: rgb(193, 193, 247);
+}
