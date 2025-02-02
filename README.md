@@ -24,7 +24,7 @@ This is a fully responsive E-Commerce Website built using React, React Bootstrap
 
 🏗️ **Installation & Setup**
 **1️⃣ Clone the repository**
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/srideviparimi/electronics-store-vision.git
 cd your-repo-name
 **2️⃣ Install dependencies**
 npm install
