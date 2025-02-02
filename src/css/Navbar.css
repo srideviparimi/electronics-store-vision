@@ -2,20 +2,20 @@
     background-color: #12232E;
     height:max-content;
     padding:2%;
+    width:100%;
+    margin:auto;
    
 }
 .pageName{
     color:white;
     text-decoration: none;
 }
-.title{
-    color:white;
-    background-color: #4DA8DA;
-    text-decoration: none;
-    padding:3%;
-    border-radius: 20px;;
-}
-.title:hover{
+
+@media (max-width:575px){
+    .nav{
+        width:max-content;
+        background-color: inherit;
+        
+    }
     
-   color: rgb(193, 193, 247);
 }

@@ -23,7 +23,7 @@ const Home=()=>{
     return <div className="home">
         {/** this is the home introduction section which is blue in colour */}
     <section className="homeSection">
-       <Container  fluid="md" > 
+       <Container  fluid="sm" className="p-3 m-2" > 
        <Row >
         <Col sm={5} >
             <div id="introCard">
@@ -47,14 +47,14 @@ const Home=()=>{
             <Carousel.Item className="item">
                 <Image src="./images/home1.jpg" roundedCircle fluid/>
                 <Carousel.Caption>
-                    <h3 ><Badge bg="info">Explore Thousands of Products</Badge></h3>
+                    <h3 ><Badge bg="info" className="fs-6 fs-md-5 fs-lg-8 p-2 p-md-3">Explore Thousands of Products</Badge></h3>
                 </Carousel.Caption>
             </Carousel.Item>
             {/**second one */}
             <Carousel.Item className="item">
             <Image src="./images/home3.jpg" roundedCircle fluid/>
                 <Carousel.Caption>
-                <h3 ><Badge bg="info" >Seamless Shopping at Your Fingertips</Badge></h3>
+                <h3 ><Badge bg="info" className="fs-6 fs-md-5 fs-lg-8 p-2 p-md-3">Seamless Shopping at Your Fingertips</Badge></h3>
 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -62,7 +62,7 @@ const Home=()=>{
             <Carousel.Item className="item" >
             <Image src="./images/home4.jpg" roundedCircle fluid/>
                 <Carousel.Caption>
-                <h3 ><Badge bg="info">Your Happiness, Delivered</Badge></h3>
+                <h3 ><Badge bg="info" className="fs-6 fs-md-5 fs-lg-8 p-2 p-md-3">Your Happiness, Delivered</Badge></h3>
 
                 </Carousel.Caption>
             </Carousel.Item>
@@ -74,19 +74,19 @@ const Home=()=>{
        <section className="features" >
         <Container  id="featuresContainer" fluid="md">
             <Row>
-                <Col><Card className="text-center " id="featuresCard">
+                <Col sm={5} lg={4}><Card className="text-center " id="featuresCard">
                     <Card.Header><FontAwesomeIcon icon={faStar} className="fa-2xl" /></Card.Header>
                     <Card.Title>Product Recommendations</Card.Title>
                     <Card.Text>Tailored Suggestions based on customer preferences, browsing history, and past purchases to create a unique shopping experience.</Card.Text>
                     </Card>
                 </Col>
-                <Col><Card className="text-center " id="featuresCard">
+                <Col sm={5} lg={4}><Card className="text-center " id="featuresCard">
                     <Card.Header><FontAwesomeIcon icon={faTruckFast}className="fa-2xl" /></Card.Header>
                     <Card.Title>Fast and secure Delivery</Card.Title>
                     <Card.Text>Swift Shipping  with efficient logistics and reliable shipping partners.Protect products with robust packaging to ensure they arrive in perfect condition.</Card.Text>
                     </Card>
                 </Col>
-                <Col><Card className="text-center " id="featuresCard">
+                <Col sm={5} lg={4}><Card className="text-center " id="featuresCard">
                     <Card.Header><FontAwesomeIcon icon={faMobileScreen} className="fa-2xl"/></Card.Header>
                     <Card.Title>Mobile-Friendly Design</Card.Title>
                     <Card.Text>Ensure the website adapts seamlessly to all screen sizes, from smartphones to tablets.Enable on-the-go shopping with easy navigation and fast loading times.</Card.Text>
@@ -95,21 +95,21 @@ const Home=()=>{
                
             </Row>
             <Row>
-            <Col><Card className="text-center " id="featuresCard">
+            <Col sm={5} lg={4}><Card className="text-center " id="featuresCard">
                     <Card.Header><FontAwesomeIcon icon={faMoneyBillTransfer} className="fa-2xl"/></Card.Header>
                     <Card.Title>Secure Payment Options</Card.Title>
                     <Card.Text>We provide a variety of payment methods, such as credit cards, digital wallets, and BNPL (Buy Now, Pay Later) using SSL encryption and security badges.</Card.Text>
                     </Card>
                 </Col>
                
-                <Col><Card className="text-center " id="featuresCard">
+                <Col sm={5} lg={4}><Card className="text-center " id="featuresCard">
                     <Card.Header><FontAwesomeIcon icon={faBagShopping}  className="fa-2xl"/></Card.Header>
                     <Card.Title>Seamless Checkout Process</Card.Title>
                     <Card.Text>Quick and Simple steps with guest checkout and auto-fill for saved customer details making it a hassle-free checkout process. </Card.Text>
                     </Card>
                 </Col>
             
-                <Col><Card className="text-center " id="featuresCard">
+                <Col sm={5} lg={4}><Card className="text-center " id="featuresCard">
                     <Card.Header><FontAwesomeIcon icon={faArrowRotateLeft} className="fa-2xl"/></Card.Header>
                     <Card.Title>Easy Returns and Refunds Policy</Card.Title>
                     <Card.Text>Hassle-Free Returns with clear instructions, prepaid return labels.Offering fast refunds and transparent policies to boost confidence.</Card.Text>
@@ -144,7 +144,7 @@ const Home=()=>{
               effect="cards"
               loop>
               {testimonials.map((testimonial,index)=>(
-                <SwiperSlide key={index} className=" h-100">
+                <SwiperSlide key={index} className=" h-100 ">
                   <Card style={{width:'100%',padding:"10%",height:'400px',backgroundColor:'#EEFBFB'}} >
                     <Card.Header><h3><Badge bg="success" style={{borderRadius:"20px"}}>{testimonial.name.charAt(0)}</Badge> {testimonial.name}</h3>
                     </Card.Header>

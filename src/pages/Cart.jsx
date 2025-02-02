@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import "../css/Cart.css";
 import Footer from '../components/Footer';
+import {Col, Row, Container} from "react-bootstrap";
 function Cart() {
   const { cart,addToCart, removeFromCart, clearCart ,reduceQuantity} = useCart();
   const [total,setTotal]=useState(0);
@@ -21,13 +22,14 @@ function Cart() {
   
  
   return (
-    <div>
+    <Container fluid>
+      <Row  className="g-4">
       
       {cart.length === 0 ? (
         <h1 id="empty">Your Cart is empty.</h1>
       ) : (
         cart.map((item)=>(
-          
+          <Col >
             <Card key={item.id} className='cartName'>
               <Card.Body className='cartBody'>
                <Card.Img variant="left" src={item.image} alt={item?.title}className="cartImage"/>
@@ -41,9 +43,11 @@ function Cart() {
                   <Button style={{backgroundColor:" #4DA8DA",border:"none", borderRadius:"20px"}} onClick={() => addToCart(item)}>+</Button></span></Card.Text>
                 <Button variant="primary"  onClick={() => removeFromCart(item.id)} id='removeBtn'>Remove</Button>
               </Card.Body>
-            </Card>  
+            </Card> 
+            </Col> 
         ))  
       )}
+      </Row>
       <div style={{textAlign:"right",margin:"5% 10% 5% 0"}}>
      {cart.length>0 &&<h4 style={{ }}>Total Price: ${total}</h4>}
       <br/><br/>
@@ -51,7 +55,7 @@ function Cart() {
       {cart.length > 0 && <Button style={{marginLeft:"2%"}}variant="primary" onClick={()=>clearCart}>Clear Cart</Button>}
       </div>
       <div className="footerDiv"> <Footer/></div>
-    </div>
+    </Container>
   );
 }
 

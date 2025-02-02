@@ -2,6 +2,7 @@ import "../css/Footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCcVisa,faCcMastercard,faCcPaypal,faCcApplePay,faGooglePay} from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
+import Container from "react-bootstrap/Container";
 const Footer=()=>{
     const scrollToTop=()=>{
         window.scrollTo({
@@ -10,7 +11,7 @@ const Footer=()=>{
         })
 
     }
-    return <div className="footer"><br/>
+    return <Container fluid className="footer"><br/>
                 <ul>
                     <li> <Link to="/" >Home</Link></li>
                     <li><Link  to="/products" >Products</Link></li>
@@ -34,6 +35,6 @@ const Footer=()=>{
                     Copyright © 2023 Merchant Electronics. All Rights Reserved.</p>
         
 
-            </div>
+            </Container>
 }
 export default Footer

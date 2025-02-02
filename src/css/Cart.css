@@ -40,3 +40,23 @@
    
     bottom:0;
 }
+@media (max-width:575px){
+    .cartBody{
+        display:block;
+        align-items: right;
+    text-align: center;
+    }
+    .cartImage{
+        width:100%;
+    }
+    .cartTitle{
+        width:100%;
+    }
+    .cartPrice{
+        width:100%;
+    }
+    #removeBtn{
+        width:auto;
+        height: auto;
+    }
+}

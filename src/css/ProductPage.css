@@ -51,6 +51,18 @@
 }
 .footerWrapper{
     margin-top: auto;
+    
+}
+.actualFooter{
+    width:100%;
+    padding: 0;
+}
+@media (max-width:575px){
+    #productImage{
+    width:100%;
+    margin:0;
+}
+
 }
 
 

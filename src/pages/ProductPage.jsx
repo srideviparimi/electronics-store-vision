@@ -72,7 +72,7 @@ const ProductPage=()=>{
             </Row> 
     </div>
     
- <div className="footerWrapper">{<Footer/>}</div>
+ <div className="footerWrapper">{<Footer className="actualFooter"/>}</div>
 </div>
 
 }
