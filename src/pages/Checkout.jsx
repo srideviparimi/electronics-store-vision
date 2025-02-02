@@ -70,7 +70,7 @@ const Checkout=()=>{
                         </thead>
                         <tbody>
                             {cart.map((item)=>
-                            <tr>
+                            <tr key={item.id}>
                                 <td>{item.title}</td>
                                 <td>{item.quantity}</td>
                                 <td>${(item.salePrice===" ")? (item.price):(item.salePrice)}</td>
