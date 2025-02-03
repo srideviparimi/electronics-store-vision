@@ -1,4 +1,4 @@
-import "../css/Checkout.css"
+import "../css/CheckOut.css"
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useCart } from './CartContext';
