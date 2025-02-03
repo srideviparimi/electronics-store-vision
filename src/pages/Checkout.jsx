@@ -69,8 +69,8 @@ const Checkout=()=>{
                             </tr>
                         </thead>
                         <tbody>
-                            {cart.map((item)=>
-                            <tr key={item.id}>
+                            {cart.map((item,index)=>
+                            <tr key={index}>
                                 <td>{item.title}</td>
                                 <td>{item.quantity}</td>
                                 <td>${(item.salePrice===" ")? (item.price):(item.salePrice)}</td>

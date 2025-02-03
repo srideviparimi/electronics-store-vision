@@ -28,7 +28,7 @@ function Cart() {
       {cart.length === 0 ? (
         <h1 id="empty">Your Cart is empty.</h1>
       ) : (
-        cart.map((item)=>(
+        cart.map((item,index)=>(
           <Col >
             <Card key={item.id} className='cartName'>
               <Card.Body className='cartBody'>
